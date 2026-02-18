@@ -2,6 +2,9 @@
 
  Blinkit, is an Indian quick-commerce company. Blinkit's core value proposition is built on speed. The 10-minute delivery guarantee is not just a marketing tag, it is the primary defensive moat against other quick-commerce competitors.
 
+## Analysis Summary
+![Summary of the Analysis Generated Using Notebooklm](https://github.com/Joyan9/Delivery-Time-Crisis-Analysis/blob/main/Analysis_Summary.png)
+
 ## 📦 Project Overview
 
 This project includes a **root cause analysis** in a simulated high-stakes business scenario. My job was to analyze a delivery time crisis at Blinkit, where the platform-wide average delivery time has surged from 9 minutes to 14+ minutes.
