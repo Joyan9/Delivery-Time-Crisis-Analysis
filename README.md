@@ -1,17 +1,19 @@
 # Blinkit Delivery Time Crisis - Root Cause Analysis Project
 
+ Blinkit, is an Indian quick-commerce company. Blinkit's core value proposition is built on speed. The 10-minute delivery guarantee is not just a marketing tag, it is the primary defensive moat against other quick-commerce competitors.
+
 ## 📦 Project Overview
 
-This is a realistic dataset for practicing **root cause analysis** in a high-stakes business scenario. You are analyzing a delivery time crisis at Blinkit, where the platform-wide average delivery time has surged from 9 minutes to 14+ minutes.
+This project includes a **root cause analysis** in a simulated high-stakes business scenario. My job was to analyze a delivery time crisis at Blinkit, where the platform-wide average delivery time has surged from 9 minutes to 14+ minutes.
 
-## 🎯 Your Mission
+## 🎯 Mission Goals
 
 Leadership is divided on the solution:
 - **COO**: "Hire 1,000 more riders immediately"
 - **CMO**: "Pause all marketing until fixed"  
 - **CTO**: "It's just seasonal rain, it will pass"
 
-**Your job**: Find the ground truth using data, not opinions.
+**My job**: Find the ground truth using data, not opinions.
 
 ---
 
@@ -51,44 +53,15 @@ External events that might affect operations
 **Impact**: +2.95 minutes (+31% degradation)
 
 **Secondary Effects**:
-- Cancellation rate jumped from 1.93% → 7.92%
+- Cancellation rate jumped
 - "Too long" cancellations spiked significantly
 - User retention showing early warning signs
 
 ---
 
-## 💡 Analysis Framework
-
-### Hypothesis Testing Checklist
-
-**❓ Hypothesis 1: "It's the rain" (CTO)**
-- Check: Correlation between rain events and delivery times
-- Compare: Rain hours vs non-rain hours during crisis
-- Verdict: _Your analysis will reveal..._
-
-**❓ Hypothesis 2: "We need more riders" (COO)**
-- Check: Rider availability trends (normal vs crisis)
-- Compare: Active riders during both periods
-- Calculate: Orders per rider ratio
-- Verdict: _Your analysis will reveal..._
-
-**❓ Hypothesis 3: "It's demand overload" (CMO)**
-- Check: Order volume trends
-- Compare: Orders per day (normal vs crisis)
-- Verdict: _Your analysis will reveal..._
-
-**❓ Hypothesis 4: "Operational bottleneck" (?)**
-- Check: `orders_in_queue` metric
-- Check: `avg_rider_wait_time` metric
-- Compare: Queue size vs rider availability
-- Find: Which stores/zones are bottlenecks?
-- Verdict: _Your analysis will reveal..._
-
----
-
 ## 🎓 Learning Objectives
 
-By completing this project, you'll practice:
+By completing this project, I'll practice:
 
 1. **Root Cause Analysis**
    - Distinguishing correlation from causation
@@ -97,7 +70,6 @@ By completing this project, you'll practice:
 
 2. **SQL Analysis**
    - JOIN operations across multiple tables
-   - Time-series analysis
    - Aggregations and window functions
    - Performance benchmarking
 
@@ -134,13 +106,3 @@ Addressed to COO & VP of Product:
 5. **Expected Impact**: What metrics will improve and by how much?
 
 ---
-
-## 🔬 Advanced Challenges
-
-Once you've found the root cause:
-
-1. **Predict Impact**: If the proposed fix is implemented, what would the delivery time drop to?
-2. **Segmentation**: Are certain customer segments more affected?
-3. **Financial Impact**: Estimate revenue loss from increased cancellations
-4. **Early Warning System**: What metric should be monitored to catch this early?
-5. **A/B Test Design**: How would you test your proposed solution?
